@@ -51,18 +51,20 @@ const UserInfo = () => {
 const Home: BlitzPage = () => {
   return (
     <Layout title="Home">
-      <div className={styles.container}>
+      <div className={`${styles.container} bg-gold-white-diagonal-gradient`}>
         <main className={styles.main}>
           <div className={styles.wrapper}>
             <div className={styles.header}>
-              <h1>Sign up now*!</h1>
+              <h1 className="text-2xl">Sign up now*!</h1>
               <div className={styles.buttonContainer}>
                 <Suspense fallback="Loading...">
                   <UserInfo />
                 </Suspense>
               </div>
-              <p>*get early access to authenticated features down the road.</p>
-              <p>technically rn u don't need to log in to use the tool.</p>
+              <div className="m-auto">
+                <p>*get early access to authenticated features down the road.</p>
+                <p>technically rn u don't need to log in to use the tool.</p>
+              </div>
             </div>
 
             <div className={styles.body}>
