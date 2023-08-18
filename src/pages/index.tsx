@@ -63,7 +63,7 @@ const Home: BlitzPage = () => {
               </div>
               <div className="m-auto">
                 <p>*get early access to authenticated features down the road.</p>
-                <p>technically rn u don't need to log in to use the tool.</p>
+                <p>technically rn u dont need to log in to use the tool.</p>
               </div>
             </div>
 
