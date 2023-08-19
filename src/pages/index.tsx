@@ -7,11 +7,6 @@ import { useMutation } from "@blitzjs/rpc"
 import { Routes, BlitzPage } from "@blitzjs/next"
 import styles from "src/styles/Home.module.css"
 
-/*
- * This file is just for a pleasant getting started page for your new app.
- * You can delete everything in here and start from scratch if you like.
- */
-
 const UserInfo = () => {
   const currentUser = useCurrentUser()
   const [logoutMutation] = useMutation(logout)
@@ -77,7 +72,9 @@ const Home: BlitzPage = () => {
                   <div className={styles.code}>
                     <span>1</span>
                     <pre>
-                      <code>play now! (game tools)</code>
+                      <Link href="/tools" className={styles.textLink}>
+                        play now! (game tools)
+                      </Link>
                     </pre>
                   </div>
 
@@ -99,7 +96,11 @@ const Home: BlitzPage = () => {
                     <span>4</span>
                     <pre>
                       <code>
-                        <Link href="/projects" className={styles.textLink}>
+                        <Link
+                          className={styles.textLink}
+                          href="https://discord.gg/fAg6Xa4uxc"
+                          target="_blank"
+                        >
                           join the community
                         </Link>
                       </code>
